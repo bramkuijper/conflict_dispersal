@@ -885,7 +885,7 @@ Fitness
 
 \begin_layout Standard
 The expected number 
-\begin_inset Formula $w_{i\rightarrow j}$
+\begin_inset Formula $w_{ji}$
 \end_inset
 
  of mutant offspring that successfully establish themselves as breeders
@@ -901,8 +901,8 @@ The expected number
  is given by
 \begin_inset Formula 
 \begin{align}
-w_{i\rightarrow j}\left(\hat{\mathbf{f}},\bar{\mathbf{f}},\mathbf{f}\right) & =\frac{1}{2}\frac{1-d}{C_{i\rightarrow j}\left(\bar{\mathbf{f}},\mathbf{f}\right)}\sigma_{i\rightarrow j}\left\{ \delta_{j1}\left[\hat{f}_{i}+\left(1-\hat{f}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-\hat{f}_{i}+\hat{f}_{i}\left(1-c_{j}\right)\right]\right\} \nonumber \\
- & +\frac{1}{2}d\sum_{k=1}^{2}\frac{p_{k}}{C_{k\rightarrow j}\left(\mathbf{f},\mathbf{f}\right)}\sigma_{k\rightarrow j}\left\{ \delta_{j1}\left[\hat{f}_{i}+\left(1-\hat{f}_{i}\right)\left(1-c_{j}\right)\right]+\delta_{j2}\left[1-\hat{f}_{i}+\hat{f}_{i}\left(1-c_{j}\right)\right]\right\} ,\label{eq:battleground:wij}
+w_{ji}\left(\hat{\mathbf{f}},\bar{\mathbf{f}},\mathbf{f}\right) & =\frac{1}{2}\frac{1-d}{C_{ji}\left(\bar{\mathbf{f}},\mathbf{f}\right)}\sigma_{i\rightarrow j}\left\{ \delta_{j1}\left[\hat{f}_{i}+\left(1-\hat{f}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-\hat{f}_{i}+\hat{f}_{i}\left(1-c_{j}\right)\right]\right\} \nonumber \\
+ & +\frac{1}{2}d\sum_{k=1}^{2}\frac{p_{k}}{C_{ji}\left(\mathbf{f},\mathbf{f}\right)}\sigma_{k\rightarrow j}\left\{ \delta_{j1}\left[\hat{f}_{i}+\left(1-\hat{f}_{i}\right)\left(1-c_{j}\right)\right]+\delta_{j2}\left[1-\hat{f}_{i}+\hat{f}_{i}\left(1-c_{j}\right)\right]\right\} ,\label{eq:battleground:wij}
 \end{align}
 
 \end_inset
@@ -1071,13 +1071,13 @@ Offspring survival before competition depends on whether an offspring's
 \end_inset
 
  breeding positions with a total number of 
-\begin_inset Formula $C_{i\rightarrow j}(\bar{\mathbf{f}},\mathbf{f})$
+\begin_inset Formula $C_{ji}(\bar{\mathbf{f}},\mathbf{f})$
 \end_inset
 
  surviving offspring that are present in the local patch:
 \begin_inset Formula 
 \begin{align}
-C_{i\rightarrow j}(\bar{\mathbf{f}},\mathbf{f}) & =(1-d)\left\{ \delta_{j1}\left[\bar{f}_{i}+\left(1-\bar{f}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-\bar{f}_{i}+\bar{f}_{i}\left(1-c_{j}\right)\right]\right\} +m_{j}\left(\mathbf{f}\right),\label{eq:num_competing_juvs}
+C_{ji}(\bar{\mathbf{f}},\mathbf{f}) & =(1-d)\left\{ \delta_{j1}\left[\bar{f}_{i}+\left(1-\bar{f}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-\bar{f}_{i}+\bar{f}_{i}\left(1-c_{j}\right)\right]\right\} +m_{j}\left(\mathbf{f}\right),\label{eq:num_competing_juvs}
 \end{align}
 
 \end_inset
