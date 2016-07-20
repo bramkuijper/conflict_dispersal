@@ -1,0 +1,471 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+\begin_inset Formula $R_{\mathrm{m}}$
+\end_inset
+
+ analysis dispersal conflict
+\end_layout
+
+\begin_layout Standard
+We refer to Ajar (2003) and Metz & Gyllenberger (2001) for a complete derivation
+ and discussion of the formulae below.
+ Briefly, the growth rate of mutants due to the production of emigrant offspring
+ 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{align}
+R_{m} & =\mathbf{h}\left(\mathbf{I}-\mathbf{A}\right)^{-1}\mathbf{i},\label{eq:ajar_main}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{h}=[\varepsilon_{1},\ldots\varepsilon_{n}]$
+\end_inset
+
+ is a vector reflecting the expected number of emigrant offspring 
+\begin_inset Formula $\varepsilon_{j}$
+\end_inset
+
+ that is produced in a patch containing 
+\begin_inset Formula $j$
+\end_inset
+
+ mutant individuals.
+ 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is the philopatric transition matrix 
+\begin_inset Formula $\mathbf{A}\equiv\left(a_{kj}\right)$
+\end_inset
+
+, elements of which reflect transitions in patches who change in composition
+ from 
+\begin_inset Formula $j$
+\end_inset
+
+ to 
+\begin_inset Formula $k$
+\end_inset
+
+ mutants, due to philopatric mutant juveniles that successfully compete
+ for breeding positions: 
+\begin_inset Formula 
+\begin{align*}
+a_{kj} & ={n \choose k}\pi_{j}^{k}\left(1-\pi_{j}\right)^{n-k},
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\pi_{j}$
+\end_inset
+
+ is the number of philopatric mutant offspring produced in a patch containing
+ 
+\begin_inset Formula $j$
+\end_inset
+
+ mutant, hermaphrodite parents.
+ Lastly, 
+\begin_inset Formula $\mathbf{i}$
+\end_inset
+
+ in eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ajar_main"
+
+\end_inset
+
+) is a vector of 
+\begin_inset Formula $n$
+\end_inset
+
+ rows describing the initial number of mutants, and is given by 
+\begin_inset Formula $\mathbf{i}=[1,0,0,\ldots,0]^{\mathrm{T}}$
+\end_inset
+
+, where 
+\begin_inset Formula $\mathrm{T}$
+\end_inset
+
+ denotes transposition.
+\end_layout
+
+\begin_layout Standard
+For any mutant dispersal or signaling strategies 
+\begin_inset Formula $x+\delta_{i}$
+\end_inset
+
+, any candidate evolutionarily stable strategies 
+\begin_inset Formula $x$
+\end_inset
+
+ are then evolutionarily stable when
+\begin_inset Formula 
+\begin{align}
+\frac{\partial^{2}R_{m}}{\partial\delta^{2}} & \biggl|_{\delta=0}<0\label{eq:ESS_deriv}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Maternal control of dispersal
+\end_layout
+
+\begin_layout Standard
+The number of philopatric offspring 
+\begin_inset Formula $\pi_{j}$
+\end_inset
+
+ produced in any patch that contains 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+-mutant parents is given by
+\begin_inset Formula 
+\begin{align*}
+\pi_{j} & =p_{i}\frac{j\frac{j}{n}\left(1-\left(d_{i}+\delta_{i}\right)\right)+\frac{1}{2}j\frac{n-j}{n}\left(1-\left(d_{i}+\delta_{i}\right)\right)+\frac{1}{2}(n-j)\frac{j}{n}\left(1-d_{i}\right)}{j\left[1-\left(d_{i}+\delta_{i}\right)\right]+(n-j)\left(1-d_{i}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}}\\
+ & +p_{k}\frac{j\frac{j}{n}\left(1-d_{k}\right)+\frac{1}{2}j\frac{n-j}{n}\left(1-d_{k}\right)+\frac{1}{2}(n-j)\frac{j}{n}\left(1-d_{k}\right)}{\left(1-d_{k}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}}\quad(i\neq k)
+\end{align*}
+
+\end_inset
+
+The parts in the numerator of the first term give (i) the number of mutant
+ offspring born from a mutant mother (who gives offspring the dispersal
+ phenotype 
+\begin_inset Formula $d_{i}+\delta_{i}$
+\end_inset
+
+) who mated with a mutant father (allowing for selfing), (ii) the nmber
+ of mutant offspring born from a mutant mother who mated with a resident
+ father, and lastly (iii) the number of mutant offspring that result from
+ a mating of a resident mother with a mutant father.
+ The same also happens in a different patch environment wherein the mutant
+ phenotype 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ does not come to expression.
+ When calculating deriv
+\end_layout
+
+\begin_layout Standard
+Similarly, the number of successful emigrant offspring 
+\begin_inset Formula $\varepsilon_{j}$
+\end_inset
+
+ produced in any patch that contains 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+-mutants is given by
+\begin_inset Formula 
+\begin{align*}
+\varepsilon_{j} & =\sum_{z=\{1,2\}}p_{z}p_{i}\left(1-c_{i}\right)\frac{j\frac{j}{n}\left(d_{i}+\delta_{i}\right)+\frac{1}{2}j\frac{n-j}{n}\left(d_{i}+\delta_{i}\right)+\frac{1}{2}(n-j)\frac{j}{n}d_{i}}{\left(1-d_{z}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}}\\
+ & +\sum_{z=\{1,2\}}p_{z}p_{k}\left(1-c_{k}\right)\frac{j\cdot\frac{j}{n}d_{k}+\frac{1}{2}j\frac{n-j}{n}d_{k}+\frac{1}{2}(n-j)\frac{j}{n}d_{k}}{\left(1-d_{z}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}}.
+\end{align*}
+
+\end_inset
+
+ Numerically analyzing the dynamic in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ajar_main"
+
+\end_inset
+
+) then yields some graphs..
+\end_layout
+
+\begin_layout Section
+Offspring control of dispersal
+\end_layout
+
+\begin_layout Standard
+The number of philopatric offspring 
+\begin_inset Formula $\pi_{j}$
+\end_inset
+
+ produced in any patch that contains 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+-mutant parents is given by
+\begin_inset Formula 
+\begin{align*}
+\pi_{j} & =p_{i}\frac{j\left(1-\left(d_{i}+\delta_{i}\right)\right)}{j\left[1-\left(d_{i}+\delta_{i}\right)\right]+(n-j)\left(1-d_{i}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}}\\
+ & +p_{k}\frac{j\left(1-d_{k}\right)}{\left(1-d_{k}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}}\quad(i\neq k)
+\end{align*}
+
+\end_inset
+
+The parts in the numerator of the first term give (i) the number of mutant
+ offspring born from a mutant mother (who gives offspring the dispersal
+ phenotype 
+\begin_inset Formula $d_{i}+\delta_{i}$
+\end_inset
+
+) who mated with a mutant father (allowing for selfing), (ii) the nmber
+ of mutant offspring born from a mutant mother who mated with a resident
+ father, and lastly (iii) the number of mutant offspring that result from
+ a mating of a resident mother with a mutant father.
+ The same also happens in a different patch environment wherein the mutant
+ phenotype 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ does not come to expression.
+\end_layout
+
+\begin_layout Standard
+Similarly, the number of successful emigrant offspring 
+\begin_inset Formula $\varepsilon_{j}$
+\end_inset
+
+ produced in any patch that contains 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+-mutants is given by
+\begin_inset Formula 
+\begin{align*}
+\varepsilon_{j} & =\sum_{z=\{1,2\}}p_{z}p_{i}\left(1-c_{i}\right)\frac{j\left(d_{i}+\delta_{i}\right)}{\left(1-d_{z}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}}\\
+ & +\sum_{z=\{1,2\}}p_{z}p_{k}\left(1-c_{k}\right)\frac{jd_{k}}{\left(1-d_{z}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}}.
+\end{align*}
+
+\end_inset
+
+ Numerically analyzing the dynamic in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ajar_main"
+
+\end_inset
+
+) then yields some graphs..
+\end_layout
+
+\begin_layout Section
+Resolution of the conflict
+\end_layout
+
+\begin_layout Paragraph
+Maternal signaling strategy
+\end_layout
+
+\begin_layout Standard
+The number of successfully established philopatric offspring 
+\begin_inset Formula $\pi_{j}$
+\end_inset
+
+ produced in any patch which contains 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ mutants is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\pi_{j,\mathrm{mat}} & =p_{i}\biggl\{\left(j\frac{j}{n}+\frac{1}{2}j\frac{n-j}{n}\right)\left(1-\left[\left(s_{i}+\delta_{i}\right)d_{S}+\left(1-\left(s_{i}+\delta_{i}\right)\right)d_{NS}\right]\right)\\
+ & +\frac{1}{2}(n-j)\frac{j}{n}\left(1-\left[s_{i}d_{S}+\left(1-s_{i}\right)d_{NS}\right]\right)\biggl\}\\
+ & /\biggl\{ j\left(1-\left[\left(s_{i}+\delta_{i}\right)d_{S}+\left(1-\left(s_{i}+\delta_{i}\right)\right)d_{NS}\right]\right)+(n-j)\left(1-\left[s_{i}d_{S}+\left(1-s_{i}\right)d_{NS}\right]\right)\\
+ & +\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}\biggl\}\\
+ & +p_{k}K
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $K$
+\end_inset
+
+ is the number of mutants recruited from patches that are in environmental
+ state 
+\begin_inset Formula $k\neq i$
+\end_inset
+
+, which are unimportant as they drop out from the derivative in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ESS_deriv"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Similarly, the number of emigrants 
+\begin_inset Formula $\varepsilon_{j}$
+\end_inset
+
+ are given by;;;
+\begin_inset Formula 
+\begin{align*}
+\varepsilon_{j,\mathrm{mat}} & =\sum_{z=\{1,2\}}p_{z}p_{i}\left(1-c_{i}\right)\biggl\{\left(j\frac{j}{n}+\frac{1}{2}j\frac{n-j}{n}\right)\left[\left(s_{i}+\delta_{i}\right)d_{S}+\left(1-\left(s_{i}+\delta_{i}\right)\right)d_{NS}\right]\\
+ & +\frac{1}{2}(n-j)\frac{j}{n}\left[s_{i}d_{S}+\left(1-s_{i}\right)d_{NS}\right]\biggl\}\\
+ & \div\left\{ 1-d_{z}+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}\right\} \\
+ & +\sum_{z=\{1,2\}}p_{z}p_{k}K
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Offspring dispersal strategy
+\end_layout
+
+\begin_layout Standard
+First, expressions of 
+\begin_inset Formula $\pi_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon_{j}$
+\end_inset
+
+ for the offspring trait 
+\begin_inset Formula $d_{S}$
+\end_inset
+
+ are given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\pi_{j,\mathrm{off}} & =\sum_{i=\{1,2\}}p_{i}\biggl\{ j\left(1-\left[s_{i}\left(d_{S}+\delta_{S}\right)+\left(1-s_{i}\right)d_{NS}\right]\right)\\
+ & /\biggl\{ j\left(1-\left[s_{i}\left(d_{S}+\delta_{S}\right)+\left(1-s_{i}\right)d_{NS}\right]\right)+(n-j)\left(1-\left[s_{i}d_{S}+\left(1-s_{i}\right)d_{NS}\right]\right)\\
+ & +\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}\biggl\}\\
+\varepsilon_{j,\mathrm{off}} & =\sum_{z=\{1,2\}}p_{z}\sum_{i=\{1,2\}}p_{i}\left(1-c_{i}\right)j\left[s_{i}\left(d_{S}+\delta_{S}\right)+\left(1-s_{i}\right)d_{NS}\right]\\
+ & /\left\{ \left(1-d_{z}\right)+\sum_{\ell=\{1,2\}}p_{\ell}\left(1-c_{\ell}\right)d_{\ell}\right\} .
+\end{align*}
+
+\end_inset
+
+Similar expressions can be derived for 
+\begin_inset Formula $d_{NS}$
+\end_inset
+
+.
+ Note that we now average over both natal environmental types 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ as 
+\begin_inset Formula $d_{S}$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{NS}$
+\end_inset
+
+ are expressed in both environments.
+ 
+\end_layout
+
+\end_body
+\end_document

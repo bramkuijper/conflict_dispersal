@@ -1,0 +1,1888 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{apjfonts}
+\usepackage{doi}
+\definecolor{darkblue}{RGB}{0,4,106}
+\definecolor{slateblue}{RGB}{17, 83,128}
+\allowdisplaybreaks
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "citecolor=black,urlcolor=black"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Maternal Effects and Parent-Offspring Conflict: Do Offspring Always Win?
+\end_layout
+
+\begin_layout Author
+Rufus A.
+ Johnstone
+\begin_inset Formula $^{1,5}$
+\end_inset
+
+ & Bram Kuijper
+\begin_inset Formula $^{2,3,4,6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Running header
+\end_layout
+
+\begin_layout Standard
+Maternal Effects and Parent-Offspring Conflict
+\end_layout
+
+\begin_layout Paragraph
+Keywords
+\end_layout
+
+\begin_layout Standard
+Nongenetic effects, maternal hormone, imprinting, extended inheritance,
+ information, epigenetics, dispersal
+\end_layout
+
+\begin_layout Paragraph
+Affiliations
+\end_layout
+
+\begin_layout Enumerate
+Department of Zoology, University of Cambridge, Downing Street, Cambridge
+ CB2 3EJ, UK
+\end_layout
+
+\begin_layout Enumerate
+Environment and Sustainability Institute (ESI), College of Life and Environmenta
+l Sciences, University of Exeter, Penryn Campus, Penryn TR10 9EZ, UK
+\end_layout
+
+\begin_layout Enumerate
+CoMPLEX, Centre for Mathematics and Physics in the Life Sciences and Experimenta
+l Biology, University College London, Physics Building, Gower Street, London
+ WC1E 6BT, UK
+\end_layout
+
+\begin_layout Enumerate
+Department of Genetics, Evolution and Environment, University College London,
+ Darwin Building, Gower Street, London, WC1E 6BT
+\end_layout
+
+\begin_layout Enumerate
+raj1003@hermes.cam.ac.uk
+\end_layout
+
+\begin_layout Enumerate
+a.l.w.kuijper@exeter.ac.uk
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Maternal effects sometimes provide offspring with reliable information about
+ the environment they are likely to experience, but they also appear to
+ offer scope for maternal manipulation of young.
+ A recent model suggests, however, that even when there is conflict between
+ parents and offspring, resistance against maternal manipulation should
+ typically lead to maternal effects that reflect offspring, rather than
+ maternal optima.
+ Here we investigate this hypothesis by modeling parent-offspring conflict
+ in two different contexts, where offspring phenotypes either affect the
+ probability of local adaptation or their probability of natal dispersal.
+ When mothers can employ less than perfectly informative signalling strategies,
+ we find that parent-offspring conflict changes the evolution of maternal
+ effects substantially.
+ Neither mothers nor their offspring can be said to win, instead conflict
+ leads to a partial or even a complete breakdown in information transfer
+ between parents and young.
+ Importantly, this breakdown in information transfer applies regardless
+ of whether the offspring's phenotype affects dispersal or local adaptation,
+ so is likely to hold generally.
+ Consequently, we predict that informative maternal effects are only likely
+ to evolve where conflict is weak or absent, whatever the underlying phenotype.
+\end_layout
+
+\begin_layout Abstract
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Maternal effects comprise any causal influence of the environment or phenotype
+ of the mother on the phenotype of her offspring that is not mediated by
+ genetic transmission 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wolf2009a,Day2011,Danchin2011"
+
+\end_inset
+
+.
+ Such effects have been identified in many species, and may involve a wide
+ variety of different mechanisms, ranging from hormonal influences 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Groothuis2008,Engelhardt2011"
+
+\end_inset
+
+, through the transmission of antibodies 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "Boulinier2008,Hasselquist2009,Garnier2011"
+
+\end_inset
+
+ and maternal provision of nutrients 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "deRooij28092010,Wells2010,Vickers2014"
+
+\end_inset
+
+, to social learning 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kruetzen2005,Verzijden2012,Mesoudi2016"
+
+\end_inset
+
+ and even active teaching 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Maestripieri1995,Rapaport2011"
+
+\end_inset
+
+.
+ It is well established that maternal effects can, at least in principle,
+ strongly influence the course of evolution within a population 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mousseau1998b,Rasanen2007,Badyaev2009,Hoyle2012"
+
+\end_inset
+
+.
+ More recently, there has been much discussion of when and why selection
+ might favour the evolution of such effects themselves 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wolf1998,Uller2011,Kuijper2014a,McNamara2015,Kuijper2015,English2015,Kuijper2016"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Adaptive explanations of the evolution of maternal effects often suggest
+ that they serve to provide offspring with information about the environment
+ they are likely to encounter 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marshall2007a,Shea2011,Kuijper2013,Leimar2015"
+
+\end_inset
+
+.
+ This information allows the young to anticipate the challenges they will
+ face and to develop an appropriate phenotypic response (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Agrawal1999,Galloway2007,McGhee2014,Holeski2012"
+
+\end_inset
+
+, but see 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Uller2013"
+
+\end_inset
+
+).
+ For instance, offspring field crickets (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Gryllus pennsylvanicus}
+\end_layout
+
+\end_inset
+
+) born from mothers that have been exposed to predators exhibit greater
+ antipredator immobility 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Storm2010"
+
+\end_inset
+
+.
+ Other antipredator adaptations have been observed in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Daphnia}
+\end_layout
+
+\end_inset
+
+, where offspring from mothers that have been exposed to predatory stimuli
+ grow larger defensive helmets 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Agrawal1999"
+
+\end_inset
+
+.
+ Similar processes also operate in plants, for example in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Campanulastrum americanum}
+\end_layout
+
+\end_inset
+
+, where offspring phenotypes are dependent on the maternal light environment,
+ and those that experience a light environment that matches that of their
+ mother have a 3.4 times larger fitness in comparison to offspring that develop
+ in different light conditions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Galloway2007"
+
+\end_inset
+
+.
+ These examples show that in at least some cases, maternal effects can sometimes
+ facilitate offspring anticipation of environmental challenges.
+\end_layout
+
+\begin_layout Standard
+Maternal effects, however, do not always operate to the advantage of offspring.
+ In some cases, they appear to benefit the mother at the expense of individual
+ offspring (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Jaenike1986,Einum2000,Mayhew2001,Janz2005,McCormick2006"
+
+\end_inset
+
+, reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Marshall2007a"
+
+\end_inset
+
+).
+ For example, in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Cephaloleia}
+\end_layout
+
+\end_inset
+
+ beetles, maternal survival is increased when ovipositing on novel plant
+ hosts, whereas individual offspring survival was reduced compared to young
+ on native hosts 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Garcia-Robledo2012"
+
+\end_inset
+
+.
+ This begs the question whether mothers always stand to gain by supplying
+ information beneficial to their young.
+\end_layout
+
+\begin_layout Standard
+Parents and offspring often face an evolutionary conflict of interest 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Trivers1974,Parker1978a,Godfray1995a,Smiseth2008,Kilner2008"
+
+\end_inset
+
+.
+ This conflict arises typically because offspring value their own survival
+ more strongly than that of current or potential future siblings, while
+ parents value all of their offspring equally 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Trivers1974"
+
+\end_inset
+
+.
+ Behavioural ecologists have focused mostly on conflicts over resource provision
+, in which offspring are selected to demand more resources than parents
+ are selected to provide 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Parker1978a,Parker1979,Macnair1978,Macnair1979,Godfray1995a,Hinde2010,Kuijper2012a"
+
+\end_inset
+
+.
+ However, this conflict may influence information exchange as well.
+ In particular, much attention has been devoted to parents’ acquisition
+ of information about offspring need or hunger, and to what extent they
+ can rely on offspring signals of condition 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Godfray1991a,Godfray2000,Royle2002"
+
+\end_inset
+
+.
+ Here, by contrast, we are concerned with acquisition of information about
+ the environment by offspring from their parents, but similar issues arise
+ in this context too 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Uller2011"
+
+\end_inset
+
+.
+ When there is parent-offspring conflict over the optimal offspring phenotype,
+ can offspring rely on maternal signals about the environment? Alternatively,
+ might maternal effects provide a means by which mothers can manipulate
+ offspring phenotype and enforce their own optima on their young 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Muller2007a,Kilner2008,Tobler2010a,Uller2008"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Uller2011"
+
+\end_inset
+
+ recently developed the first formal model of the evolution of potentially
+ informative maternal effects under parent-offspring conflict.
+ They focus on the illustrative case of conflict over dispersal rates, and
+ consider an environment in which offspring may experience either high or
+ low dispersal cost, but must rely wholly or partially on maternal signals
+ to determine the state of the local environment when deciding whether or
+ not to disperse.
+ This provides an ideal context in which to explore how parent-offspring
+ conflict is likely to influence the evolution of maternal effects, because
+ parents typically favour higher levels of dispersal than offspring do 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Motro1983,Frank1986,Taylor1988,Starrfelt2010"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Uller & Pen's 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "Uller2011"
+
+\end_inset
+
+ model yields the striking result that, in the absence of costs or constraints
+ on offspring responses to maternal signals, conflict has no effect on the
+ evolution of informative maternal effects; at evolutionary equilibrium,
+ offspring are able to rely on maternal signals to implement their own optimal
+ strategy.
+ Only when offspring were constrained to respond to maternal effects against
+ their best interest, or to pay a cost in order to escape their influence,
+ did conflict influence the outcome of evolution.
+ These results contrast markedly with the outcome of signalling models that
+ focus on information transfer from offspring to parents, which suggest
+ that conflict often leads to the breakdown of informative signalling, unless
+ honesty is maintained by some form of signal cost (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Godfray1991,Johnstone1999,Godfray2000"
+
+\end_inset
+
+; though see 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Bergstrom1998,Brilot2003"
+
+\end_inset
+
+ for discussion of the possibility of honest, cost-free signals).
+ Consequently, this raises the question whether informative signalling from
+ mothers to offspring is indeed a general outcome of parent offspring conflict,
+ as suggested by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Uller2011"
+
+\end_inset
+
+, or whether there are contexts in which conflict can lead to a breakdown
+ of informative maternal signals instead.
+\end_layout
+
+\begin_layout Standard
+To make robust predictions about the evolution of maternal effects in the
+ presence of parent-offspring conflict, we study maternal effects in two
+ disparate contexts: in the main text, we focus on a scenario of parent-offsprin
+g conflict over offspring phenotype determination, which in turn affects
+ offspring adaptation to a fluctuating local environment (see also 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Leimar2015,English2015,Kuijper2016"
+
+\end_inset
+
+).
+ In the supplement, we study the same conflict over dispersal rates as modeled
+ by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Uller2011"
+
+\end_inset
+
+.
+ A key assumption by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Uller2011"
+
+\end_inset
+
+ is that a deterministic mapping between a mother’s perception of environmental
+ state and the signal she provides to her young.
+ Their analysis allows for noise in the mother's initial assessment of the
+ environment, and noise in implementation of the offspring's response, but
+ there is no noise in the production of the signal itself, which perforce
+ provides perfect information about the state of the environment as the
+ mother perceives it.
+ Our model, by contrast, considers the possibility that mothers transmit
+ information with an evolvable degree of noise, thereby potentially allowing
+ mothers to adopt signalling strategies that are only partially informative
+ or even completely uninformative.
+ We show that when such strategies are possible, conflict can have a dramatic
+ impact on the evolution of maternal effects, in many cases leading to partial
+ or complete breakdown of reliable maternal signalling.
+ 
+\end_layout
+
+\begin_layout Section
+The model
+\end_layout
+
+\begin_layout Standard
+In the main text, we focus on a model of parent-offspring conflict over
+ offspring local adaptation.
+ However, to assess whether our conclusions apply more generally, the Online
+ Supplement section SX considers a model similar to the one by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Uller2011"
+
+\end_inset
+
+ where we consider parent-offspring conflict over dispersal.
+\end_layout
+
+\begin_layout Standard
+We consider an `infinite island' 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wright1931,Rousset2004,Lehmann2010"
+
+\end_inset
+
+ sexually hermaphroditic population comprising an infinite number of patches,
+ each of which contains 
+\begin_inset Formula $n$
+\end_inset
+
+ adult breeders.
+ Generations are non-overlapping, and in each generation, every breeder
+ produces, as mother, a large number of offspring, each of which is sired
+ by a random local breeder (from the same patch as its mother, which includes
+ the possibility of self-fertilisation).
+ For simplicity we will assume that the population is haploid; gametes are
+ produced clonally and pair to form diploid zygotes, which immediately undergo
+ meiosis to form a new generation of haploid offspring.
+ Some fraction of the young born on a patch remain there, while the rest
+ disperse at random to other patches.
+ After dispersal, offspring on a patch, both native and immigrant, compete
+ for the 
+\begin_inset Formula $n$
+\end_inset
+
+ breeding vacancies created by the death of the previous generation.
+ Those that fail to obtain a breeding vacancy die, and the cycle then repeats.
+\end_layout
+
+\begin_layout Paragraph
+Environmental change and offspring phenotype determination
+\end_layout
+
+\begin_layout Standard
+Each patch fluctuates between two environmental states 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+: each generation after the birth offspring, a local patch in environmental
+ state 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ changes with probability 
+\begin_inset Formula $\sigma_{1\rightarrow2}$
+\end_inset
+
+ to 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+, whereas it remains in environmental state 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-\sigma_{1\rightarrow2}$
+\end_inset
+
+.
+ Similarly, an environment 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+ patch changes to 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\sigma_{2\rightarrow1}$
+\end_inset
+
+ whereas it remains 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+with probability 
+\begin_inset Formula $1-\sigma_{2\rightarrow1}$
+\end_inset
+
+.
+ Patches fluctuate independently from one another, so at any given time
+ a proportion 
+\begin_inset Formula $p_{1}=\sigma_{2\rightarrow1}/(\sigma_{1\rightarrow2}+\sigma_{2\rightarrow1})$
+\end_inset
+
+ of patches is in environmental state 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+.
+ Offspring can then attain one of two phenotypes, 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ that determine its survival in its local environment: with probability
+ 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ an offspring that is born in environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ will attain phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ whereas with probability 
+\begin_inset Formula $1-f_{i}$
+\end_inset
+
+ it will attain 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+.
+ Hence, offspring phenotype determination is then governed by two probabilities,
+ 
+\begin_inset Formula $\mathbf{f}=\{f_{1},f_{2}\}$
+\end_inset
+
+, with 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ in environment 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ in environment 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+.
+ When the phenotype matches the local environment (ie., 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ in environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ ), offspring survive at probability 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ In case of a mismatch (i.e., 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ in environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+; 
+\begin_inset Formula $i\ne j$
+\end_inset
+
+) offspring survive at probability 
+\begin_inset Formula $1-c_{j}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Mapping the battleground
+\end_layout
+
+\begin_layout Standard
+The question then becomes whether evolutionary interests between parents
+ and offspring align or diverge when it comes to the decision of developing
+ into phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ versus 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+.
+ To this end, we assess the evolution of 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+ when it is under control of genes expressed in the mother or in offspring
+ (the `battleground', 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Godfray1995a"
+
+\end_inset
+
+).
+ To determine the equilibrium phenotype determination probabilities 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+ under maternal and under offspring control, we adopt an adaptive dynamic
+ approach, assuming that evolution proceeds by the successive substitution
+ of mutations of small effect, with a clear separation of time scales between
+ demographic and evolutionary processes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Geritz1998,Rousset2004,Dercole2008"
+
+\end_inset
+
+.
+ We incorporate the impact of local kin competition using the direct fitness
+ approach of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Taylor1996"
+
+\end_inset
+
+ (see also 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Taylor2007,Rousset2004"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Paragraph
+Fitness
+\end_layout
+
+\begin_layout Standard
+The expected number 
+\begin_inset Formula $w_{i\rightarrow j}$
+\end_inset
+
+ of mutant offspring that successfully establish themselves as breeders
+ in environmental state 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+, that are produced by an adult breeder currently living in a local enviroment
+ 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{align}
+w_{i\rightarrow j}\left(\hat{\mathbf{f}},\bar{\mathbf{f}},\mathbf{f}\right) & =\frac{1}{2}\frac{1-d}{C_{i\rightarrow j}\left(\bar{\mathbf{f}},\mathbf{f}\right)}\sigma_{i\rightarrow j}\left\{ \delta_{j1}\left[\hat{f}_{i}+\left(1-\hat{f}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-\hat{f}_{i}+\hat{f}_{i}\left(1-c_{j}\right)\right]\right\} \nonumber \\
+ & +\frac{1}{2}d\sum_{k=1}^{2}\frac{p_{k}}{C_{k\rightarrow j}\left(\mathbf{f},\mathbf{f}\right)}\sigma_{k\rightarrow j}\left\{ \delta_{j1}\left[\hat{f}_{i}+\left(1-\hat{f}_{i}\right)\left(1-c_{j}\right)\right]+\delta_{j2}\left[1-\hat{f}_{i}+\hat{f}_{i}\left(1-c_{j}\right)\right]\right\} ,\label{eq:battleground:wij}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{\mathbf{f}}=(\hat{f}_{1},\hat{f}_{2})$
+\end_inset
+
+ denotes the mutant phenotype of the focal adult breeder, while 
+\begin_inset Formula $\bar{\mathbf{f}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+ denote the average phenotypes of all breeders in the local patch and the
+ global population respectively.
+ Parents produce a large number of offspring, who remain at the natal path
+ with probability 
+\begin_inset Formula $1-d$
+\end_inset
+
+ (first line in eq.
+ [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+]) or disperse with probability 
+\begin_inset Formula $d$
+\end_inset
+
+ to a randomly chosen remote site (second line in eq.
+ [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+]).
+ 
+\end_layout
+
+\begin_layout Standard
+Offspring survival before competition depends on whether an offspring's
+ phenotype matches its current environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+, which is not necessarily the same environment as its natal environment
+ 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+.
+ Environments either stay constant or change dependent on the environmental
+ transition probabilities 
+\begin_inset Formula $\sigma_{i\rightarrow j}$
+\end_inset
+
+.
+ At birth, however, offspring phenotypes can only be adjusted dependent
+ on information about their natal environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+: with probability 
+\begin_inset Formula $\hat{f}_{i}$
+\end_inset
+
+ offspring attain phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, whereas with probability 
+\begin_inset Formula $1-\hat{f}_{i}$
+\end_inset
+
+ they attain phenotype 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+.
+ In case the future environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+ is identical to environment 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ (here denoted by a Kronecker's delta 
+\begin_inset Formula $\delta_{j1}$
+\end_inset
+
+, which is equal to 1 when 
+\begin_inset Formula $e_{j}=e_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $0$
+\end_inset
+
+ otherwise), 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring have maximal survival, so their frequency is 
+\begin_inset Formula $\hat{f}_{i}$
+\end_inset
+
+.
+ By contrast, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ offspring have a reduced survival probability of 
+\begin_inset Formula $1-c_{j}$
+\end_inset
+
+ in environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+, so their frequency is 
+\begin_inset Formula $(1-\hat{f}_{i})(1-c_{j})$
+\end_inset
+
+.
+ By contrast, the second part in curly brackets reflects the case where
+ the future environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+, in which case 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ offspring (at frequency 
+\begin_inset Formula $1-\hat{f}_{i}$
+\end_inset
+
+) have maximal survival, while 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring (at frequency 
+\begin_inset Formula $\hat{f}_{i}$
+\end_inset
+
+) have reduced survival of 
+\begin_inset Formula $1-c_{j}$
+\end_inset
+
+.
+ After survival, a focal offspring then competes for any of the 
+\begin_inset Formula $n$
+\end_inset
+
+ breeding positions with a total number of 
+\begin_inset Formula $C_{i\rightarrow j}(\bar{\mathbf{f}},\mathbf{f})$
+\end_inset
+
+ surviving offspring that are present in the local patch:
+\begin_inset Formula 
+\begin{align}
+C_{i\rightarrow j}(\bar{\mathbf{f}},\mathbf{f}) & =(1-d)\left\{ \delta_{j1}\left[\bar{f}_{i}+\left(1-\bar{f}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-\bar{f}_{i}+\bar{f}_{i}\left(1-c_{j}\right)\right]\right\} +m_{j}\left(\mathbf{f}\right),\label{eq:num_competing_juvs}
+\end{align}
+
+\end_inset
+
+which can be derived in the same fashion as eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+) with the difference that 
+\begin_inset Formula $\bar{\mathbf{f}}$
+\end_inset
+
+ reflects the probability of producing 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring averaged over all the 
+\begin_inset Formula $n$
+\end_inset
+
+ breeders in the local patch and 
+\begin_inset Formula $m_{j}(\mathbf{f})$
+\end_inset
+
+ the total number of immigrant juveniles, which is given by
+\begin_inset Formula 
+\begin{align}
+m_{j}\left(\mathbf{f}\right) & =d\sum_{k=1}^{2}p_{k}\left\{ \delta_{j1}\left[f_{k}+\left(1-f_{k}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-f_{k}+f_{k}\left(1-c_{j}\right)\right]\right\} \label{eq:immigrants}
+\end{align}
+
+\end_inset
+
+where immigrants have been born in patches in environmental state 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ (at frequency 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+), with the frequency of 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring equal to the global average phenotype 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+.
+ Note that survival is determined by the environment of arrival 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+.
+ With this, the last line in eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+) reflecting the dispersal of focal offspring to remote sites (each type
+ at frequency 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+), can be derived in the same fashion.
+ The matrix 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+, with elements 
+\begin_inset Formula $b_{ij}=w_{j\rightarrow i}$
+\end_inset
+
+, then comprises the transition probabilities between all the different
+ classes of mutants.
+\end_layout
+
+\begin_layout Paragraph
+Evolutionary change
+\end_layout
+
+\begin_layout Standard
+Using a direct fitness approach, selection gradients 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ reflecting evolutionary change in the probability 
+\begin_inset Formula $f_{i}\in f_{1},f_{2}$
+\end_inset
+
+ of developing as 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring in environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ are then given by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Taylor1990a,Taylor1996"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+S_{i} & =\left.\sum_{j,k}v_{j}u_{k}\left[\frac{\partial b_{jk}}{\partial\hat{f}_{i}}\hat{r}_{i}+\frac{\partial b_{jk}}{\partial\bar{f}_{i}}\bar{r}_{i}\right]\right|_{\hat{f}_{i}=\bar{f}_{i}=f_{i}},\label{eq:selection_gradient}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ is the individual reproductive value of individuals living in a 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+ environment and 
+\begin_inset Formula $u_{k}$
+\end_inset
+
+ the stable class frequency of individuals living in a 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ environment.
+ 
+\begin_inset Formula $\hat{r}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}_{i}$
+\end_inset
+
+ denote the mean relatedness between the focal's gene copy and those that
+ control phenotype determination of either i) an offspring that inherits
+ the focal gene copy 
+\begin_inset Formula $\hat{f}_{i}$
+\end_inset
+
+ or ii) an offspring born on the local patch.
+ These coefficients of relatedness depend on whether dispersal is under
+ maternal or offspring control, but in either case they can be expressed
+ in terms of the mean relatedness between two adults sampled randomly, with
+ replacement, from the same patch in environmental state 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+, which is denoted 
+\begin_inset Formula $\hat{Q}_{i}$
+\end_inset
+
+ (see eq.
+ [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:suppl:battleground:relatedness"
+
+\end_inset
+
+] in the Online Supplement).
+ Under maternal control, 
+\begin_inset Formula $\hat{r}_{i}=(1+\hat{Q}_{i})/2$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}_{i}=\hat{Q}_{i}$
+\end_inset
+
+, while under offspring control, 
+\begin_inset Formula $\hat{r}_{i}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}_{i}=\hat{Q}_{i}$
+\end_inset
+
+.
+ Reproductive values and stable class frequencies can easily be derived
+ as the left and right eigenvectors of the resident transition matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, which is the mutant transition matrix 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ evaluated at 
+\begin_inset Formula $\hat{\mathbf{f}}=\bar{\mathbf{f}}=\mathbf{f}$
+\end_inset
+
+.
+ As these eigenvectors are not very insightful they are not given here.
+\end_layout
+
+\begin_layout Standard
+We then solve numerically for equilibrium values 
+\begin_inset Formula $f_{i}^{*}$
+\end_inset
+
+ of the probability of producing 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ phenotypes at which all selection gradients are zero (and we can confirm
+ that these equilibria are convergence stable by checking that the eigenvalues
+ of the matrix 
+\begin_inset Formula $\mathbf{M}\equiv[\partial S_{i}/\partial f_{j}]$
+\end_inset
+
+ all have negative real parts.
+\end_layout
+
+\begin_layout Subsection
+Resolving the conflict
+\end_layout
+
+\begin_layout Standard
+In case mothers and offspring favor different probabilities of producing
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ phenotypes, how might maternal-offspring conflict be resolved? If offspring
+ must rely on mothers for information about the state of the localenvironment,
+ might this allow mothers to manipulate the dispersal behaviour of their
+ young? To evaluate this possibility, we suppose that mothers can assess
+ the cost of dispersal out of the local patch, while offspring cannot 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "see also"
+key "Uller2011"
+
+\end_inset
+
+.
+ Importantly, we assume that mothers either choose to give or to withhold
+ a signal from each of their young, with probabilities of giving the signal
+ dependent on the state of the local environment.
+ Offspring choose to develop into 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+, with probabilities dependent on whether or not they have received a signal
+ from their mother.
+ The maternal signalling strategy 
+\begin_inset Formula $\mathbf{s}\equiv(s_{1},s_{2})$
+\end_inset
+
+ thus specifies the probabilities of giving (rather than withholding) the
+ signal in each type of patch, while the offspring phenotype determination
+ strategy 
+\begin_inset Formula $\mathbf{f}=(f_{S},\ f_{NS})$
+\end_inset
+
+ specifies the probabilities of developing a 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ phenotype when a signal is or is not received.
+ It is the combination of these two strategies that determines the fraction
+ of young 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ that develop as 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ in each environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align}
+f_{i} & =s_{i}f_{S}+\left(1-s_{i}\right)f_{NS}\label{eq:fi_resolution}
+\end{align}
+
+\end_inset
+
+Given the above assumptions, we can then derive a mutant transition matrix
+ 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+, elements of which contain the fitness expression 
+\begin_inset Formula $w_{i\rightarrow j}(\hat{\mathbf{s}},\bar{\mathbf{s}},\mathbf{s};f_{S},f_{NS})$
+\end_inset
+
+ for mutant parents with a slightly deviant signaling strategy 
+\begin_inset Formula $\hat{\mathbf{s}}$
+\end_inset
+
+ in a local patch with average signalling phenotype 
+\begin_inset Formula $\bar{\mathbf{s}}$
+\end_inset
+
+ amidst a global population with phenotype 
+\begin_inset Formula $\mathbf{s}$
+\end_inset
+
+.
+ Similarly, we can derive 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ for offspring, elements of which contain the fitness expression 
+\begin_inset Formula $w_{i\rightarrow j}(\hat{\mathbf{f}},\bar{\mathbf{f}},\mathbf{f})$
+\end_inset
+
+ for mutant offspring with a slightly deviant phenotype determination strategy
+ 
+\begin_inset Formula $\hat{\mathbf{f}}$
+\end_inset
+
+ in a local patch with average strategy 
+\begin_inset Formula $\bar{\mathbf{f}}$
+\end_inset
+
+ amidst a global population with phenotype 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+.
+ Expressions for 
+\begin_inset Formula $w_{i\rightarrow j}(\hat{\mathbf{s}},\bar{\mathbf{s}},\mathbf{s};f_{S},f_{NS})$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{i\rightarrow j}(\hat{\mathbf{f}},\bar{\mathbf{f}},\mathbf{f})$
+\end_inset
+
+ are given in the Online Supplement (eqns.
+ [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:resolution:wij:signalling"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:resolution:wij:phenotype_determination"
+
+\end_inset
+
+]).
+ We then derive selection gradients 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ for both the signalling strategy 
+\begin_inset Formula $\mathbf{s}$
+\end_inset
+
+, which we assume is under maternal control, and selection gradients 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+ for the phenotype determination strategy 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+, which we assume is under offspring control (we do not allow for pleiotropic
+ mutations that influence both strategies simultaneously):
+\begin_inset Formula 
+\begin{align}
+S_{i} & =\left.\sum_{j,k}v_{j}u_{k}\left[\frac{\partial b_{jk}}{\partial\hat{s}_{i}}\hat{r}_{i}+\frac{\partial b_{jk}}{\partial\bar{s}_{i}}\bar{r}_{i}\right]\right|_{\hat{s}_{i}=\bar{s}_{i}=s_{i}}\label{eq:signalling:selection_gradient}\\
+T_{i} & =\left.\sum_{j,k}v_{j}u_{k}\left[\frac{\partial b_{jk}}{\partial\hat{f}_{i}}\hat{r}_{i}+\frac{\partial b_{jk}}{\partial\bar{f}_{i}}\bar{r}_{i}\right]\right|_{\hat{f}_{i}=\bar{f}_{i}=f_{i}}.
+\end{align}
+
+\end_inset
+
+To solve the conflict resolution model, we seek to identify equilibrium
+ strategy pairs for which all selection gradients (for both strategies)
+ are simultaneously equal to zero.
+ To do so, we choose initial conditions such that the signal is highly informati
+ve (e.g., we might choose 
+\begin_inset Formula $s_{1}=0.9$
+\end_inset
+
+ and 
+\begin_inset Formula $s_{2}=0.1$
+\end_inset
+
+) and offspring highly responsive (e.g., 
+\begin_inset Formula $f_{S}=0.9$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{NS}=0.1$
+\end_inset
+
+), and iteratively update the signalling and phentoype determination probabiliti
+es by adding to each the value of the relevant selection gradient (given
+ the current strategies), bounding the updated values between 0 and 1.
+ This procedure is repeated until all strategies converge to stable values.
+ The solutions obtained in this way are robust to changes in the precise
+ starting conditions chosen, and convergence stable by construction.
+ Note, however, that two mirror-image signalling equlibria are possible
+ in any particular case – one in which the signal is given when costs are
+ low and withheld when costs are high, and one in which the signal is given
+ when costs are high and withheld when costs are low.
+ These provide offspring with equal information, and thus have identical
+ consequences in terms of the phenotype determination rates out of each
+ patch type.
+ For ease of interpretation, however, we consistently choose starting conditions
+ in which the signal is given when costs are low.
+ 
+\end_layout
+
+\begin_layout Standard
+All results have been replicated using stochastic individual-based simulations
+ written in C++ (see source code at github: ).
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{equation}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{table}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+theequation{S
+\backslash
+arabic{equation}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+theHequation{S
+\backslash
+arabic{equation}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+theHsection{S
+\backslash
+arabic{section}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+thesection{S
+\backslash
+arabic{section}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+theHfigure{S
+\backslash
+arabic{figure}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+theHtable{S
+\backslash
+arabic{table}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+thefigure{S
+\backslash
+arabic{figure}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*
+\backslash
+thetable{S
+\backslash
+arabic{table}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\backslash
+LARGE{Maternal Effects and Parent-Offspring Conflict:
+\backslash
+
+\backslash
+ Do Offspring Always Win?}
+\backslash
+vspace{.5cm}
+\backslash
+
+\backslash
+	 
+\backslash
+large{Rufus A.
+ Johnstone 
+\backslash
+& Bram Kuijper}
+\backslash
+
+\backslash
+ 
+\backslash
+Large{
+\backslash
+textbf{Online Supplement}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Battleground: relatedness coefficients
+\end_layout
+
+\begin_layout Standard
+Writing 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+ for the equilibrium probability of identity between two copies of any phenotype
+ determination allele sampled in two adults (with replacement) in environment
+ 
+\begin_inset Formula $i$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\begin{align}
+Q_{i} & =\frac{1}{n}+\frac{n-1}{n}\sum_{k=1}^{2}\left[p_{k}\sigma_{k\rightarrow i}\frac{Q_{k}}{\sum_{k=1}^{2}p_{k}\sigma_{k\rightarrow i}}\right.\nonumber \\
+ & \left.\times\left(\frac{(1-d)\left\{ \delta_{i1}\left[f_{k}+\left(1-f_{k}\right)\left(1-c_{i}\right)\right]+\left(1-\delta_{i1}\right)\left[1-f_{k}+f_{k}\left(1-c_{i}\right)\right]\right\} }{C_{k\rightarrow i}\left(\mathbf{f},\mathbf{f}\right)}\right)^{2}\right].\label{eq:suppl:battleground:relatedness}
+\end{align}
+
+\end_inset
+
+With probability 
+\begin_inset Formula $1/n$
+\end_inset
+
+, one and the same adult is sampled twice, so the probability of identity
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ With probability 
+\begin_inset Formula $(n-1)/n$
+\end_inset
+
+, two distinct adults are sampled.
+ With probability 
+\begin_inset Formula $p_{k}\sigma_{k\rightarrow i}$
+\end_inset
+
+ the local patch was in enviromental state 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ in the previously.
+ In case individuals were native to the local patch (with probability 
+\begin_inset Formula $1-d$
+\end_inset
+
+), they would thus have attained a 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ phenotype with probability 
+\begin_inset Formula $f_{k}$
+\end_inset
+
+ and a 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ phenotype otherwise, which affects their survival as described in the main
+ text.
+ Hence, the total probability that a juvenile natal to a 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ patch successfully secures a breeding position is given by the part in
+ parentheses.
+ The probability that both adults are natal to the patch is then this probabilit
+y squared.
+ Note that we divide by the total probability of environmental change 
+\begin_inset Formula $\sum_{k=1}^{2}p_{k}\sigma_{k\rightarrow i}$
+\end_inset
+
+ as we are interested in the conditional probability (rather than the joint
+ probability) that two adults are identical by descent given that they have
+ been born in environment 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We can then solve the recursions in equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:suppl:battleground:relatedness"
+
+\end_inset
+
+) and substitute the resulting equilibrium values 
+\begin_inset Formula $\hat{Q}_{i}$
+\end_inset
+
+ in the resulting expressions for 
+\begin_inset Formula $\hat{r}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}_{i}$
+\end_inset
+
+ in eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:selection_gradient"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+Resolving the conflict: fitness expressions
+\end_layout
+
+\begin_layout Standard
+Considering the signalling strategy first, we have
+\begin_inset Formula 
+\begin{align}
+w_{i\rightarrow j}\left(\hat{\mathbf{s}},\bar{\mathbf{s}},\mathbf{s};\mathbf{f}\right) & =\frac{1}{2}\frac{1-d}{C_{i\rightarrow j}\left(\bar{\mathbf{s}},\mathbf{s}\right)}\sigma_{i\rightarrow j}\nonumber \\
+ & \times\left\{ \delta_{j1}\left[\hat{s}_{i}f_{S}+\left(1-\hat{s}_{i}\right)f_{NS}+\left[1-\left(\hat{s}_{i}f_{S}+\left(1-\hat{s}_{i}\right)f_{NS}\right)\right]\left(1-c_{j}\right)\right]\right.\nonumber \\
+ & +\left.\left(1-\delta_{j1}\right)\left[1-\left(\hat{s}_{i}f_{S}+\left(1-\hat{s}_{i}\right)f_{NS}\right)+\left(\hat{s}_{i}f_{S}+\left(1-\hat{s}_{i}\right)f_{NS}\right)\left(1-c_{j}\right)\right]\right\} \nonumber \\
+ & +\frac{1}{2}d\sum_{k=1}^{2}\frac{p_{k}}{C_{k\rightarrow j}\left(\mathbf{s},\mathbf{s}\right)}\sigma_{k\rightarrow j}\nonumber \\
+ & \times\left\{ \delta_{j1}\left[\hat{s}_{i}f_{S}+\left(1-\hat{s}_{i}\right)f_{NS}+\left[1-\left(\hat{s}_{i}f_{S}+\left(1-\hat{s}_{i}\right)f_{NS}\right)\right]\left(1-c_{j}\right)\right]\phantom{\sum_{k=1}^{2}}\right.\nonumber \\
+ & \left.\phantom{\Biggl|}+\left(1-\delta_{j1}\right)\left[1-\left(\hat{s}_{i}f_{S}+\left(1-\hat{s}_{i}\right)f_{NS}\right)+\left(\hat{s}_{i}f_{S}+\left(1-\hat{s}_{i}\right)f_{NS}\right)\left(1-c_{j}\right)\right]\right\} ,\label{eq:resolution:wij:signalling}
+\end{align}
+
+\end_inset
+
+where the first and the last three lines reflect the expected number of
+ offspring that establish themselves in the natal patch and in a randomly
+ chosen remote patch respectively.
+ Its derivation is similar to eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+) in the main text, with 
+\begin_inset Formula $f_{i}=s_{i}f_{S}+(1-s_{i})f_{NS}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+With regards to the offspring phenotype determination strategy, we have
+ 
+\begin_inset Formula 
+\begin{align}
+w_{i\rightarrow j}\left(\hat{\mathbf{f}},\bar{\mathbf{f}},\mathbf{f};\mathbf{s}\right) & =\frac{1}{2}\frac{1-d}{C_{i\rightarrow j}\left(\bar{\mathbf{f}},\mathbf{f}\right)}\sigma_{i\rightarrow j}\nonumber \\
+ & \times\left\{ \delta_{j1}\left[s_{i}\hat{f}_{S}+\left(1-s_{i}\right)\hat{f}_{NS}+\left[1-\left(s_{i}\hat{f}_{S}+\left(1-s_{i}\right)\hat{f}_{NS}\right)\right]\left(1-c_{j}\right)\right]\right.\nonumber \\
+ & +\left.\left(1-\delta_{j1}\right)\left[1-\left(s_{i}\hat{f}_{S}+\left(1-s_{i}\right)\hat{f}_{NS}\right)+\left(s_{i}\hat{f}_{S}+\left(1-s_{i}\right)\hat{f}_{NS}\right)\left(1-c_{j}\right)\right]\right\} \nonumber \\
+ & +\frac{1}{2}d\sum_{k=1}^{2}\frac{p_{k}}{C_{k\rightarrow j}\left(\mathbf{f},\mathbf{f}\right)}\sigma_{k\rightarrow j}\nonumber \\
+ & \times\left\{ \delta_{j1}\left[s_{i}\hat{f}_{S}+\left(1-s_{i}\right)\hat{f}_{NS}+\left[1-\left(s_{i}\hat{f}_{S}+\left(1-s_{i}\right)\hat{f}_{NS}\right)\right]\left(1-c_{j}\right)\right]\phantom{\sum_{k=1}^{2}}\right.\nonumber \\
+ & \left.\phantom{\Biggl|}+\left(1-\delta_{j1}\right)\left[1-\left(s_{i}\hat{f}_{S}+\left(1-s_{i}\right)\hat{f}_{NS}\right)+\left(s_{i}\hat{f}_{S}+\left(1-s_{i}\right)\hat{f}_{NS}\right)\left(1-c_{j}\right)\right]\right\} ,\label{eq:resolution:wij:phenotype_determination}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/bram/Projects/databases/transgenerational"
+options "evolution"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

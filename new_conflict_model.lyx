@@ -1,0 +1,795 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\definecolor{darkblue}{RGB}{0,4,106}
+\usepackage{doi}
+\usepackage{apjfonts}
+\end_preamble
+\options numbers,sort&compress
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "helvet" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing other 1.05
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "citecolor=darkblue,urlcolor=darkblue,linkcolor=darkblue"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Parent-Offspring Conflict over Phenotype Determination
+\end_layout
+
+\begin_layout Itemize
+Temporal fluctuations between generations added
+\end_layout
+
+\begin_layout Section
+Battleground model
+\end_layout
+
+\begin_layout Standard
+The expected number 
+\begin_inset Formula $w_{i\rightarrow j}$
+\end_inset
+
+ of mutant offspring that successfully establish themselves as breeders
+ in environmental state 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+, that are produced by an adult breeder currently living in a local enviroment
+ 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{align}
+w_{i\rightarrow j}\left(\hat{\mathbf{f}},\bar{\mathbf{f}},\mathbf{f}\right) & =\frac{1}{2}\frac{1-d}{C_{i\rightarrow j}\left(\bar{\mathbf{f}},\mathbf{f}\right)}\sigma_{i\rightarrow j}\left\{ \delta_{j1}\left[\hat{f}_{i}+\left(1-\hat{f}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-\hat{f}_{i}+\hat{f}_{i}\left(1-c_{j}\right)\right]\right\} \nonumber \\
+ & +\frac{1}{2}d\sum_{k=1}^{2}\frac{p_{k}}{C_{k\rightarrow j}\left(\mathbf{f},\mathbf{f}\right)}\sigma_{k\rightarrow j}\left\{ \delta_{j1}\left[\hat{f}_{i}+\left(1-\hat{f}_{i}\right)\left(1-c_{j}\right)\right]+\delta_{j2}\left[1-\hat{f}_{i}+\hat{f}_{i}\left(1-c_{j}\right)\right]\right\} ,\label{eq:battleground:wij}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{\mathbf{f}}=(\hat{f}_{1},\hat{f}_{2})$
+\end_inset
+
+ denotes the mutant phenotype of the focal adult breeder, while 
+\begin_inset Formula $\bar{\mathbf{f}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+ denote the average phenotypes of all breeders in the local patch and the
+ global population respectively.
+ Parents produce a large number of offspring, who remain at the natal path
+ with probability 
+\begin_inset Formula $1-d$
+\end_inset
+
+ (first line in eq.
+ [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+]) or disperse with probability 
+\begin_inset Formula $d$
+\end_inset
+
+ to a randomly chosen remote site (second line in eq.
+ [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+]).
+ 
+\end_layout
+
+\begin_layout Standard
+Offspring survival before competition depends on whether an offspring's
+ phenotype matches its current environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+, which is not necessarily the same environment as its natal environment
+ 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+.
+ Environments either stay constant or change dependent on the environmental
+ transition probabilities 
+\begin_inset Formula $\sigma_{i\rightarrow j}$
+\end_inset
+
+.
+ At birth, however, offspring phenotypes can only be adjusted dependent
+ on information about their natal environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+: with probability 
+\begin_inset Formula $\hat{f}_{i}$
+\end_inset
+
+ offspring attain phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, whereas with probability 
+\begin_inset Formula $1-\hat{f}_{i}$
+\end_inset
+
+ they attain phenotype 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+.
+ In case the future environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+ is identical to environment 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ (here denoted by a Kronecker's delta 
+\begin_inset Formula $\delta_{j1}$
+\end_inset
+
+, which is equal to 1 when 
+\begin_inset Formula $e_{j}=e_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $0$
+\end_inset
+
+ otherwise), 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring have maximal survival, so their frequency is 
+\begin_inset Formula $\hat{f}_{i}$
+\end_inset
+
+.
+ By contrast, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ offspring have a reduced survival probability of 
+\begin_inset Formula $1-c_{j}$
+\end_inset
+
+ in environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+, so their frequency is 
+\begin_inset Formula $(1-\hat{f}_{i})(1-c_{j})$
+\end_inset
+
+.
+ By contrast, the second part in curly brackets reflects the case where
+ the future environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+, in which case 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ offspring (at frequency 
+\begin_inset Formula $1-\hat{f}_{i}$
+\end_inset
+
+) have maximal survival, while 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring (at frequency 
+\begin_inset Formula $\hat{f}_{i}$
+\end_inset
+
+) have reduced survival of 
+\begin_inset Formula $1-c_{j}$
+\end_inset
+
+.
+ After survival, a focal offspring then competes for any of the 
+\begin_inset Formula $n$
+\end_inset
+
+ breeding positions with a total number of 
+\begin_inset Formula $C_{i\rightarrow j}(\bar{\mathbf{f}},\mathbf{f})$
+\end_inset
+
+ surviving offspring that are present in the local patch:
+\begin_inset Formula 
+\begin{align}
+C_{i\rightarrow j}(\bar{\mathbf{f}},\mathbf{f}) & =(1-d)\left\{ \delta_{j1}\left[\bar{f}_{i}+\left(1-\bar{f}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-\bar{f}_{i}+\bar{f}_{i}\left(1-c_{j}\right)\right]\right\} +m_{j}\left(\mathbf{f}\right),\label{eq:num_competing_juvs}
+\end{align}
+
+\end_inset
+
+which can be derived in the same fashion as eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+) with the difference that 
+\begin_inset Formula $\bar{\mathbf{f}}$
+\end_inset
+
+ reflects the probability of producing 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring averaged over all the 
+\begin_inset Formula $n$
+\end_inset
+
+ breeders in the local patch and 
+\begin_inset Formula $m_{j}(\mathbf{f})$
+\end_inset
+
+ the total number of immigrant juveniles, which is given by
+\begin_inset Formula 
+\begin{align}
+m_{j}\left(\mathbf{f}\right) & =d\sum_{k=1}^{2}p_{k}\left\{ \delta_{j1}\left[f_{k}+\left(1-f_{k}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{j1}\right)\left[1-f_{k}+f_{k}\left(1-c_{j}\right)\right]\right\} \label{eq:immigrants}
+\end{align}
+
+\end_inset
+
+where immigrants have been born in patches in environmental state 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ (at frequency 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+), with the frequency of 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring equal to the global average phenotype 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+.
+ Note that survival is determined by the environment of arrival 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+.
+ With this, the last line in eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:battleground:wij"
+
+\end_inset
+
+) reflecting the dispersal of focal offspring to remote sites (each type
+ at frequency 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+), can be derived in the same fashion.
+ The matrix 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+, with elements 
+\begin_inset Formula $b_{ij}=w_{j\rightarrow i}$
+\end_inset
+
+, then comprises the transition probabilities between all the different
+ classes of mutants.
+\end_layout
+
+\begin_layout Paragraph
+Evolutionary change
+\end_layout
+
+\begin_layout Standard
+Using a direct fitness approach, selection gradients 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ reflecting evolutionary change in the probability 
+\begin_inset Formula $f_{i}\in f_{1},f_{2}$
+\end_inset
+
+ of developing as 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ offspring in environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ are then given by 
+\begin_inset Formula 
+\begin{align}
+S_{i} & =\left.\sum_{j,k}v_{j}u_{k}\left[\frac{\partial b_{jk}}{\partial\hat{f}_{i}}\hat{r}_{i}+\frac{\partial b_{jk}}{\partial\bar{f}_{i}}\bar{r}_{i}\right]\right|_{\hat{f}_{i}=\bar{f}_{i}=f_{i}},\label{eq:selection_gradient}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ is the individual reproductive value of individuals living in a 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+ environment and 
+\begin_inset Formula $u_{k}$
+\end_inset
+
+ the stable class frequency of individuals living in a 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ environment.
+ 
+\begin_inset Formula $\hat{r}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}_{i}$
+\end_inset
+
+ denote the mean relatedness between the focal's gene copy and those that
+ control phenotype determination of either i) an offspring that inherits
+ the focal gene copy 
+\begin_inset Formula $\hat{f}_{i}$
+\end_inset
+
+ or ii) an offspring born on the local patch.
+ These coefficients of relatedness depend on whether dispersal is under
+ maternal or offspring control, but in either case they can be expressed
+ in terms of the mean relatedness between two adults sampled randomly, with
+ replacement, from the same patch in environmental state 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+, which is denoted 
+\begin_inset Formula $\hat{Q}_{i}$
+\end_inset
+
+ (see eq.
+ [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:suppl:battleground:relatedness"
+
+\end_inset
+
+] in the Online Supplement).
+ Under maternal control, 
+\begin_inset Formula $\hat{r}_{i}=(1+\hat{Q}_{i})/2$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}_{i}=\hat{Q}_{i}$
+\end_inset
+
+, while under offspring control, 
+\begin_inset Formula $\hat{r}_{i}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}_{i}=\hat{Q}_{i}$
+\end_inset
+
+.
+ Reproductive values and stable class frequencies can easily be derived
+ as the left and right eigenvectors of the resident transition matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, which is the mutant transition matrix 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ evaluated at 
+\begin_inset Formula $\hat{\mathbf{f}}=\bar{\mathbf{f}}=\mathbf{f}$
+\end_inset
+
+.
+ As these eigenvectors are not very insightful they are not given here.
+\end_layout
+
+\begin_layout Standard
+We then solve numerically for equilibrium values 
+\begin_inset Formula $f_{i}^{*}$
+\end_inset
+
+ of the probability of producing 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ phenotypes at which all selection gradients are zero (and we can confirm
+ that these equilibria are convergence stable by checking that the eigenvalues
+ of the matrix 
+\begin_inset Formula $\mathbf{M}\equiv[\partial S_{i}/\partial f_{j}]$
+\end_inset
+
+ all have negative real parts.
+\end_layout
+
+\begin_layout Section
+Battleground: relatedness coefficients
+\end_layout
+
+\begin_layout Standard
+Writing 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+ for the equilibrium probability of identity between two copies of any phenotype
+ determination allele sampled in two adults (with replacement) in environment
+ 
+\begin_inset Formula $i$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\begin{align}
+Q_{i} & =\frac{1}{n}+\frac{n-1}{n}\sum_{k=1}^{2}\left[p_{k}\sigma_{k\rightarrow i}\frac{Q_{k}}{\sum_{k=1}^{2}p_{k}\sigma_{k\rightarrow i}}\right.\nonumber \\
+ & \left.\times\left(\frac{(1-d)\left\{ \delta_{i1}\left[f_{k}+\left(1-f_{k}\right)\left(1-c_{i}\right)\right]+\left(1-\delta_{i1}\right)\left[1-f_{k}+f_{k}\left(1-c_{i}\right)\right]\right\} }{C_{k\rightarrow i}\left(\mathbf{f},\mathbf{f}\right)}\right)^{2}\right].\label{eq:suppl:battleground:relatedness}
+\end{align}
+
+\end_inset
+
+With probability 
+\begin_inset Formula $1/n$
+\end_inset
+
+, one and the same adult is sampled twice, so the probability of identity
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ With probability 
+\begin_inset Formula $(n-1)/n$
+\end_inset
+
+, two distinct adults are sampled.
+ With probability 
+\begin_inset Formula $p_{k}\sigma_{k\rightarrow i}$
+\end_inset
+
+ the local patch was in enviromental state 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ in the previously.
+ In case individuals were native to the local patch (with probability 
+\begin_inset Formula $1-d$
+\end_inset
+
+), they would thus have attained a 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ phenotype with probability 
+\begin_inset Formula $f_{k}$
+\end_inset
+
+ and a 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ phenotype otherwise, which affects their survival as described in the main
+ text.
+ Hence, the total probability that a juvenile natal to a 
+\begin_inset Formula $e_{k}$
+\end_inset
+
+ patch successfully secures a breeding position is given by the part in
+ parentheses.
+ The probability that both adults are natal to the patch is then this probabilit
+y squared.
+ Note that we divide by the total probability of environmental change 
+\begin_inset Formula $\sum_{k=1}^{2}p_{k}\sigma_{k\rightarrow i}$
+\end_inset
+
+ as we are interested in the conditional probability (rather than the joint
+ probability) that two adults are identical by descent given that they have
+ been born in environment 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We can then solve the recursions in equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:suppl:battleground:relatedness"
+
+\end_inset
+
+) and substitute the resulting equilibrium values 
+\begin_inset Formula $\hat{Q}_{i}$
+\end_inset
+
+ in the resulting expressions for 
+\begin_inset Formula $\hat{r}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}_{i}$
+\end_inset
+
+ in eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:selection_gradient"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+Battleground: results
+\end_layout
+
+\begin_layout Paragraph
+Battleground
+\end_layout
+
+\begin_layout Standard
+For a scenario with limited dispersal 
+\begin_inset Formula $d=0.05$
+\end_inset
+
+ and a scenario where environment 1 is more common than envt 2 (i.e., 
+\begin_inset Formula $\sigma_{1\rightarrow2}=0.05$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{2\rightarrow1}=0.5$
+\end_inset
+
+, Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:battleground_f1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:battleground_f2"
+
+\end_inset
+
+ show the divergence between parental and offspring phenotype-determination
+ strategies.
+\end_layout
+
+\begin_layout Section
+Figures
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs_general/overview_battleground/battleground3d_s1pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Battleground for 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+, the probability of developing as a phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ adult when born in a patch of environment 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+.
+ Blue mesh: offspring.
+ Red mesh: mother.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:battleground_f1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename figs_general/overview_battleground/battleground3d_s2pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Battleground for 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+, the probability of developing as a phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ adult when born in a patch of environment 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+.
+ Blue mesh: offspring.
+ Red mesh: mother.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:battleground_f2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

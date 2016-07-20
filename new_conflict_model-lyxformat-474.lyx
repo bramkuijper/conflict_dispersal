@@ -1,0 +1,552 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\definecolor{darkblue}{RGB}{0,4,106}
+\usepackage{doi}
+\usepackage{tikz}
+\allowdisplaybreaks
+
+\usepackage[bold-style=upright]{unicode-math}
+\setmainfont[Ligatures=TeX]{Asana-Math.otf}
+\setmathfont{Asana-Math.otf}
+\end_preamble
+\options numbers,sort&compress
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing other 1.05
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "citecolor=darkblue,urlcolor=darkblue,linkcolor=darkblue"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Parent-offspring conflict over phenotype determination
+\end_layout
+
+\begin_layout Standard
+We consider a spatially structured population of infinitely many patches.
+ Each patch can be either in environmental state 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ (at frequency 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+) or 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+ (at frequency 
+\begin_inset Formula $p_{2}=1-p_{1})$
+\end_inset
+
+.
+ Each individual attains either one of two phenotypes, 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ which affects juvenile survival.
+ Specifically, juveniles with a phenotype matching the local environment
+ (
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ in environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+) survive at probability 
+\begin_inset Formula $k$
+\end_inset
+
+, while individuals with a mismatch between phenotype and environment (
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ in environment 
+\begin_inset Formula $e_{j}$
+\end_inset
+
+) survive at probability 
+\begin_inset Formula $(1-c)k$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ then determine the probability of developing phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ when the individual is born in natal environment 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+.
+ The expected fitness of a 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ gene copy in an adult member of the population is then given by
+\begin_inset Formula 
+\begin{align*}
+W & =\sum_{i=1}^{k}\left[p_{i}\frac{(1-d)\left\{ \delta_{i=1}\left[\hat{q}_{i}+\left(1-\hat{q}_{i}\right)\left(1-c_{i}\right)\right]+\left(1-\delta_{i=1}\right)\left[\left(1-\hat{q}_{i}\right)+\hat{q}_{1}\left(1-c_{i}\right)\right]\right\} }{(1-d)\left\{ \delta_{i=1}\left[\bar{q}_{i}+\left(1-\bar{q}_{i}\right)\left(1-c_{i}\right)\right]+\left(1-\delta_{i=1}\right)\left[\left(1-\bar{q}_{i}\right)+\bar{q}_{1}\left(1-c_{i}\right)\right]\right\} +m_{i}}\right.\\
+ & +\left.\sum_{j=1}^{k}p_{j}\frac{d\left\{ \delta_{i=j}\left[\hat{q}_{i}+\left(1-\hat{q}_{i}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{i=j}\right)\left[1-\hat{q}_{i}+\hat{q}_{i}\left(1-c_{j}\right)\right]\right\} }{(1-d)\left\{ \left[q_{j}+\left(1-q_{j}\right)\left(1-c_{j}\right)\right]+\left(1-\delta_{i=1}\right)\left[\left(1-q_{j}\right)+q_{j}\left(1-c_{j}\right)\right]\right\} +m_{j}}\right]
+\end{align*}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{align*}
+m_{i} & =\sum_{j=1}^{k}p_{j}\left\{ \delta_{i=1}\left[q_{j}+\left(1-q_{j}\right)\left(1-c_{i}\right)\right]+\left(1-\delta_{i=1}\right)\left[\left(1-q_{j}\right)+q_{j}\left(1-c_{i}\right)\right]\right\} .
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Relatedness
+\end_layout
+
+\begin_layout Standard
+Under offspring control, we have 
+\begin_inset Formula $\hat{r}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}=R$
+\end_inset
+
+.
+ Under maternal control, we have 
+\begin_inset Formula $r=\left(1+R\right)/2$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{r}=R$
+\end_inset
+
+.
+ Mean relatedness 
+\begin_inset Formula $R$
+\end_inset
+
+ between two adults sampled randomly with replacement is given by the recursion
+ 
+\begin_inset Formula 
+\begin{align*}
+R & =\sum_{i=1}^{k}p_{i}\left[\frac{1}{n}+\frac{n-1}{n}\left\{ \left(1-d\right)\frac{\delta_{i=j}\left[q_{i}+\left(1-q_{i}\right)(1-c_{i})\right]+\left(1-\delta_{i=j}\right)\left[1-q_{i}+q_{i}\left(1-c_{i}\right)\right]}{\delta_{i=j}\left[q_{i}+\left(1-q_{i}\right)(1-c_{i})\right]+\left(1-\delta_{i=j}\right)\left[1-q_{i}+q_{i}\left(1-c_{i}\right)\right]+m_{i}}\right\} ^{2}R\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Signal
+\end_layout
+
+\begin_layout Standard
+We have
+\begin_inset Formula 
+\begin{align*}
+q_{i} & =s_{i}q_{S}+\left(1-s_{i}\right)q_{NS}
+\end{align*}
+
+\end_inset
+
+Hence we have
+\begin_inset Formula 
+\begin{align*}
+W(\hat{\mathbf{s}},\bar{\mathbf{s}},\mathbf{s}) & =\sum_{i=1}^{k}\left[p_{i}\frac{(1-d)\left\{ \delta_{i=1}\left[1-c_{i}+\left(\hat{s}_{i}q_{S}+\left(1-\hat{s}_{i}\right)q_{NS}\right)c_{i}\right]+\left(1-\delta_{i=1}\right)\left[1-\left(\hat{s}_{i}q_{S}+\left(1-\hat{s}_{i}\right)q_{NS}\right)c_{i}\right]\right\} }{(1-d)\left\{ \delta_{i=1}\left[1-c_{i}+\left(\bar{s}_{i}q_{S}+\left(1-\bar{s}_{i}\right)q_{NS}\right)c_{i}\right]+\left(1-\delta_{i=1}\right)\left[1-\left(\bar{s}_{i}q_{S}+\left(1-\bar{s}_{i}\right)q_{NS}\right)c_{i}\right]\right\} +m_{i}}\right.\\
+ & +\left.\sum_{j=1}^{k}p_{j}\frac{d\left\{ \delta_{i=j}\left[1-c_{j}+\left(\hat{s}_{i}q_{S}+\left(1-\hat{s}_{i}\right)q_{NS}\right)c_{j}\right]+\left(1-\delta_{i=j}\right)\left[1-\left(\hat{s}_{i}q_{S}+\left(1-\hat{s}_{i}\right)q_{NS}\right)c_{j}\right]\right\} }{(1-d)\left\{ \left[1-c_{j}+\left(s_{j}q_{S}+\left(1-s_{j}\right)q_{NS}\right)c_{j}\right]+\left(1-\delta_{i=1}\right)\left[1-\left(s_{i}q_{S}+\left(1-s_{i}\right)q_{NS}\right)c_{j}\right]\right\} +m_{j}}\right]
+\end{align*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{align*}
+W\left(\hat{\mathbf{q}},\bar{\mathbf{q}},\mathbf{q}\right) & =\sum_{i=1}^{k}\left[p_{i}\frac{(1-d)\left\{ \delta_{i=1}\left[1-c_{i}+\left(s_{i}\hat{q}_{S}+\left(1-s_{i}\right)\hat{q}_{NS}\right)c_{i}\right]+\left(1-\delta_{i=1}\right)\left[1-\left(s_{i}\hat{q}_{S}+\left(1-s_{i}\right)\hat{q}_{NS}\right)c_{i}\right]\right\} }{(1-d)\left\{ \delta_{i=1}\left[1-c_{i}+\left(s_{i}\bar{q}_{S}+\left(1-s_{i}\right)\bar{q}_{NS}\right)c_{i}\right]+\left(1-\delta_{i=1}\right)\left[1-\left(s_{i}\bar{q}_{S}+\left(1-s_{i}\right)\bar{q}_{NS}\right)c_{i}\right]\right\} +m_{i}}\right.\\
+ & +\left.\sum_{j=1}^{k}p_{j}\frac{d\left\{ \delta_{i=j}\left[1-c_{j}+\left(s_{i}\hat{q}_{S}+\left(1-s_{i}\right)\hat{q}_{NS}\right)c_{j}\right]+\left(1-\delta_{i=j}\right)\left[1-\left(s_{i}\hat{q}_{S}+\left(1-s_{i}\right)\hat{q}_{NS}\right)c_{j}\right]\right\} }{(1-d)\left\{ \left[1-c_{j}+\left(s_{j}q_{S}+\left(1-s_{j}\right)q_{NS}\right)c_{j}\right]+\left(1-\delta_{i=1}\right)\left[1-\left(s_{i}q_{S}+\left(1-s_{i}\right)q_{NS}\right)c_{j}\right]\right\} +m_{j}}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Paragraph
+Battleground
+\end_layout
+
+\begin_layout Standard
+For a scenario with 
+\begin_inset Formula $p_{1}=0.7$
+\end_inset
+
+, 
+\begin_inset Formula $d=0.1$
+\end_inset
+
+ and 
+\begin_inset Formula $n=2$
+\end_inset
+
+, Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:battleground_q1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:battleground_q2"
+
+\end_inset
+
+ show the divergence between parental and offspring phenotype-determination
+ strategies.
+\end_layout
+
+\begin_layout Paragraph
+Resolution
+\end_layout
+
+\begin_layout Standard
+What regards the resolution: Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:resolution"
+
+\end_inset
+
+ shows a similar pattern as for the dispersal game.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:resolution"
+
+\end_inset
+
+E shows two `ridges' with valleys within them.
+ These valleys indicate outcomes where the signal becomes uninformative.
+\end_layout
+
+\begin_layout Section
+Figures
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/fig_battle_z1z2/battleground_q1_d01_p07.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Battleground for 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, the probability of developing as a phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ adult when born in a patch of environment 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+.
+ Transparent mesh: mother.
+ Blue mesh: offspring.
+ Parameters: 
+\begin_inset Formula $p_{1}=0.7,$
+\end_inset
+
+ 
+\begin_inset Formula $d=0.1$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:battleground_q1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/fig_battle_z1z2/battleground_q2_d01_p07.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Battleground for 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+, the probability of developing as a phenotype 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ adult when born in a patch of environment 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+.
+ Transparent mesh: mother.
+ Blue mesh: offspring.
+ Parameters: 
+\begin_inset Formula $p_{1}=0.7,$
+\end_inset
+
+ 
+\begin_inset Formula $d=0.1$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:battleground_q2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename src/numerical/all_wireframes_p05_d_04.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wireframes showing the evolved strategies and the information value of the
+ signal.
+ Parameters: 
+\begin_inset Formula $p_{1}=0.5,$
+\end_inset
+
+ 
+\begin_inset Formula $d=0.4$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:resolution"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename src/numerical/all_wireframes_p04_d_07.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wireframes showing the evolved strategies and the information value of the
+ signal.
+ Parameters: 
+\begin_inset Formula $p_{1}=0.4,$
+\end_inset
+
+ 
+\begin_inset Formula $d=0.7$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:resolution2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
